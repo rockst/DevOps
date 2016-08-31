@@ -7,11 +7,11 @@
 >	https://github.com/docker/docker
 
 * 基於 GO 語言食現的雲端開源專案
+* Docker 引擎基礎是 Linux Containers - LXS
 * 2013 dotCloud 改名 Docker, Inc.
 * Redhat RHEL 6.5/CentOS 6.5/Ubuntu 14.04
 * PasS/Azure/Windows Server
 * AWS EC2 Container
-* Docker 引擎基礎是 Linux Containers - LXS
 
 ## 優點
 
@@ -22,5 +22,5 @@
 
 ## 與傳統虛擬話的差別
 
-*   aaa
-    *   bbb
+* aaa
+    * bbb
