@@ -1,6 +1,6 @@
-## Install
+# Install
 
-### Ubuntu 14.04
+## Ubuntu 14.04
 
 	sudo apt-get update
 	sudo apt-get install -y docker.io
@@ -20,7 +20,7 @@
 	sudo apt-get update -u lxc-docker
 	
 	  
-### Mac OS
+## Mac OS
 
 * Mac 由於是一個封閉的 Linux 所以安裝上需要透過一個 Tool: boot2docker 來產生 VM 進行安裝
 * [下載 boot2docker](https://github.com/boot2docker/osx-installer/releases)
