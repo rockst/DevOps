@@ -77,27 +77,84 @@
 	  
 ### Mac OS
 
-* [Download boot2docker](https://github.com/boot2docker/osx-installer/releases)
-* [Install boot2docker-rain](http://ephrain.pixnet.net/blog/post/59556208)
-* [Install boot2docker-josh](https://joshhu.gitbooks.io/docker_theory_install/content/DockerBible/mac_osboot2docker.html)
+* Mac 由於是一個封閉的 Linux 所以安裝上需要透過一個 Tool: boot2docker 來產生 VM 進行安裝
+* [下載 boot2docker](https://github.com/boot2docker/osx-installer/releases)
+* [安裝 By Rain](http://ephrain.pixnet.net/blog/post/59556208)
+* [安裝 By Josh](https://joshhu.gitbooks.io/docker_theory_install/content/DockerBible/mac_osboot2docker.html)
+
+>	boot2doocker 指令
 
 	boot2docker init
-	boot2docker start
-	boot2docker stop
+	boot2docker start -- 開啟
+	boot2docker stop -- 停止
+
+> boot2docker 連線
+	
 	boot2docker ssh
 
 ## Image
 
+### 取得 Image
+
 	docker pull ubuntu
-	docker pull ubuntu:14.04
+	docker pull ubuntu:14.04 - 加版號
+	docker pull ubuntu:latest - 最新板
+	
+> 設定 Image Tag 為 xxx
 	
 	docker tag xxx ubuntu:latest
 	
+### 瀏覽所有 Images
+	
 	docker images
+	
+> 查尋某個 image 的資訊 (JSON格式)
+
 	docker inspect image_id
 	docker inspect -f {{".RootFS.Layers"}} image_id
+	
+### 在公開的 Pool 搜尋某個 image
 	
 	docker search mysql
 		--automated=false // 顯示自動建立的 image
 		--stars=0 指定幾顆星以上
+
+### 刪除某個 image
+
+	docker rmi tag_name or image_id
+	docker rmi -f xxx - 強制刪除 
+	
+### 建立 image
+
+> 設定一個 image 的變動
+
+	docker run -ti ubuntu /bin/bash
+	touck test
+	exit
+	(記住容器的ID）:87b98cf92493
+	root@87b98cf92493:/# exit
+
+> 產生一個 image
+
+	docker commit -m 'Commit message' -a 'Author name' 容器ID 新的ImageID
+
+### 儲存和載入 image
+
+	docker save -o output_filename.tar REPOSITORY:TAG
+	docker load -i input_filename.tar
+	
+### 上傳 image 到 Docker Hub
+
+* [Docker Hub](https://dockerhub.com) 註冊一個帳號: rockstlin
+* 建立一個 REPOSITORY ＝> rockstlin/test
+* 回到本端機的 Docker
+	* docker login 登入
+	* Tag 你要 push 的 image
+		* docker tag repository:tag rockstlin/test(dockerhub 帳號/dockerhub repostory)
+	* docker push rockstlin/test
+	
+	
+	
+
+
 	
