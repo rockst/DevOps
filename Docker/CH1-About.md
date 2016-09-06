@@ -25,6 +25,9 @@
 ![](http://image.slidesharecdn.com/dockerfromscratch-160208083101/95/docker-from-scratch-9-638.jpg?cb=1454920342)
 
 * 傳統是在硬體層虛擬化，Docker則是在作業系統層
+
+[
+《Docker —— 從入門到實踐­》正體中文版](https://philipzheng.gitbooks.io/docker_practice/content/introduction/)
 	
 	
 	
