@@ -10,9 +10,8 @@
 
 # httpd redirect to https #
 
-* http://stackoverflow.com/questions/4083221/how-to-redirect-all-http-requests-to-https
-
      RewriteEngine On
      RewriteCond %{HTTPS} off
      RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+     
 
