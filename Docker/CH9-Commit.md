@@ -10,3 +10,7 @@ https://philipzheng.gitbooks.io/docker_practice/content/image/create.html
   docker push NAME[:TAG]
 
 http://stackoverflow.com/questions/28349392/how-to-push-a-docker-image-to-a-private-repository
+
+# Pull#
+
+docker pull 新映像檔的名稱和tag
