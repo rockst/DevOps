@@ -26,6 +26,14 @@
 - tar xvf phantomjs-1.9.8-linux-x86_64.tar --strip-components=1 -C /opt/phantomjs/
 - ln -s /opt/phantomjs/bin/phantomjs /usr/bin/phantomjs
 
+## 字形檔 ##
+
+- yum install cjkuni-* wqy-zenhei-*
+
+- 參考
+-- https://note.artchiu.org/2014/05/29/%E5%AE%89%E8%A3%9D-centos-rhel-6-%E9%A0%90%E8%A8%AD%E7%9A%84%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87%E5%AD%97%E5%9E%8B%E5%A5%97%E4%BB%B6/
+-- https://stackoverflow.com/questions/15029002/phantomjs-screenshot-font-missing-boxes-rendered-instead
+
 ## Test ##
 
 - phantomjs /opt/phantomjs/examples/hello.js
