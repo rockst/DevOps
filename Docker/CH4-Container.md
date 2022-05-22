@@ -70,6 +70,6 @@
 	cat file_name.tar | docker import - test/ubuntu:v1.0
 	
 ## Commit 到 image
-	docker commit -m 'message -a 'Auther' CONTAINER_ID IMAGE_NAME:TAG
+	docker commit -m 'message' -a 'Auther' CONTAINER_ID IMAGE_NAME:TAG
 	
 
