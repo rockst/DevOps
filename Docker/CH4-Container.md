@@ -64,6 +64,8 @@
 	關於 Save 與 Export 對 Image 之間的差異
 	https://ithelp.ithome.com.tw/articles/10193804
 	
+	docker save IMAGE_ID -o file_name.tar
+	
 ## 匯入
 
 	docker import file_name
