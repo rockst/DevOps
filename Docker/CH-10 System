@@ -1,8 +1,0 @@
-docker system prune
-
-docker system prune -a -f
-
--a Remove all unused images not just dangling ones
--f Do not prompt for confirmation
-
-https://docs.docker.com/engine/reference/commandline/system_prune/
